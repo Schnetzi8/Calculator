@@ -35,7 +35,10 @@ public class OutputFile {
 			e.printStackTrace();
 		}
 	}
-
+	/**
+	 * @author Robin
+	 * @return Everythin in the file
+	 */
 	public String getContent() {
 		if (!Files.exists(path)) {
 			return "!";
@@ -53,11 +56,23 @@ public class OutputFile {
 		return "";
 	}
 	
+	/**
+	 * adds another operation to the log file
+	 * @param num1 first number of the operation
+	 * @param sign the symbol of the operation
+	 * @param num2 second number of the operation
+	 * @param result the result of the operatioon
+	 * @author Robin
+	 */
 	public void addEntry(double num1, String sign, double num2, double result) {
 		out.print("\n" + num1 + "	" + sign + "	" + num2 + "	" + "=" + "	" + result);
 		out.flush();
 	}
-
+	
+	/**
+	 * Clears the file of all contents
+	 * @author Robin
+	 */
 	public void clear() {
 		try {
 			Files.newBufferedWriter(path);
