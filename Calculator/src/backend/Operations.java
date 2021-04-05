@@ -39,5 +39,20 @@ public enum Operations {
 		this.sign = sign;
 	}
 	
+	/**
+	 * @author Robin
+	 * @return the sign of this operation
+	 */
+	public String getSign() {
+		return sign;
+	}
+	
+	/**
+	 * Provides the ability to process two input numbers into one output number using the operation this instance of the {@link Operations} Enum describes
+	 * @param num1 first input number
+	 * @param num2 second input number
+	 * @return the result of the operation.
+	 * @author Robin
+	 */
 	public abstract double calculate(double num1, double num2);
 }

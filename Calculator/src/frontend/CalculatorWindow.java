@@ -23,6 +23,7 @@ public class CalculatorWindow {
 	private JFrame window;
 	private JMenuBar menuBar;
 	private Container contentPane;
+	private JMenuItem ausgabeLeeren;
 
 	private CalculatorPanel calculatorPanel;
 	private VolumePanel volumePanel;
@@ -67,10 +68,10 @@ public class CalculatorWindow {
 		menu.setText("Datei");
 		menuBar.add(menu);
 
-		JMenuItem menuItem = new JMenuItem("Ausgabe leeren");
-		menuItem.setFocusPainted(true);
-		menuItem.setFocusable(true);
-		menu.add(menuItem);
+		ausgabeLeeren = new JMenuItem("Ausgabe leeren");
+		ausgabeLeeren.setFocusPainted(true);
+		ausgabeLeeren.setFocusable(true);
+		menu.add(ausgabeLeeren);
 	}
 
 	private void setupCopyrightLabel() {
@@ -89,6 +90,10 @@ public class CalculatorWindow {
 
 	public LogPanel getLogPanel() {
 		return logPanel;
+	}
+
+	public JMenuItem getAusgabeLeeren() {
+		return ausgabeLeeren;
 	}
 	
 }
