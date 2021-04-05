@@ -61,6 +61,10 @@ public class LogPanel extends JPanel implements ICalculatorPart {
 		
 	}
 
+	public JTextArea getLogTextArea() {
+		return logTextArea;
+	}
+
 	@Override
 	public JLabel getLabel() {
 		JLabel labelBerechnungsanzeige = new JLabel("Hier werden alle Berechnungen angezeigt:");

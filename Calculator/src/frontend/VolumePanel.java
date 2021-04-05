@@ -43,7 +43,7 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 
 	private void setupPanel() {
 		this.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		this.setToolTipText("thisnrechner");
+		this.setToolTipText("volumenrechner");
 		this.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		this.setBackground(Color.LIGHT_GRAY);
 		this.setBounds(340, 20, 300, 300);
@@ -164,6 +164,26 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 		this.add(leeren);
 	}
 	
+	public JTextField getVolumeTextField() {
+		return volumeTextField;
+	}
+
+	public JButton getLeeren() {
+		return leeren;
+	}
+
+	public JSlider getHoehe() {
+		return hoehe;
+	}
+
+	public JSlider getBreite() {
+		return breite;
+	}
+
+	public JSlider getTiefe() {
+		return tiefe;
+	}
+
 	@Override
 	public JLabel getLabel() {
 		JLabel labelVolume = new JLabel("Volumenrechner:");

@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.UIManager;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.SoftBevelBorder;
@@ -26,6 +25,27 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 	private JTextField calculatorTextField;
 	private Font font;
+
+	private JButton button_0;
+	private JButton button_1;
+	private JButton button_2;
+	private JButton button_3;
+	private JButton button_4;
+	private JButton button_5;
+	private JButton button_6;
+	private JButton button_7;
+	private JButton button_8;
+	private JButton button_9;
+
+	private JButton button_plus;
+	private JButton button_minus;
+	private JButton button_mal;
+	private JButton button_durch;
+	
+	private JButton button_gleich;
+	private JButton button_dot;
+	private JButton button_clear;
+	private JButton button_back;
 
 	/**
 	 * 
@@ -62,7 +82,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 	private void setupButtons() {
 		// ------------------------------------------------------------------ Button 0
 
-		JButton button_0 = new JButton("0");
+		button_0 = new JButton("0");
 		button_0.setFont(font);
 		button_0.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_0.setBackground(SystemColor.window);
@@ -71,7 +91,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 1
 
-		JButton button_1 = new JButton("1");
+		button_1 = new JButton("1");
 		button_1.setFont(font);
 		button_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_1.setBackground(SystemColor.window);
@@ -80,7 +100,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 2
 
-		JButton button_2 = new JButton("2");
+		button_2 = new JButton("2");
 		button_2.setFont(font);
 		button_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_2.setBackground(SystemColor.window);
@@ -89,7 +109,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 3
 
-		JButton button_3 = new JButton("3");
+		button_3 = new JButton("3");
 		button_3.setFont(font);
 		button_3.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_3.setBackground(SystemColor.window);
@@ -98,7 +118,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 4
 
-		JButton button_4 = new JButton("4");
+		button_4 = new JButton("4");
 		button_4.setFont(font);
 		button_4.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_4.setBackground(SystemColor.window);
@@ -107,7 +127,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 5
 
-		JButton button_5 = new JButton("5");
+		button_5 = new JButton("5");
 		button_5.setFont(font);
 		button_5.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_5.setBackground(SystemColor.window);
@@ -116,7 +136,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 6
 
-		JButton button_6 = new JButton("6");
+		button_6 = new JButton("6");
 		button_6.setFont(font);
 		button_6.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_6.setBackground(SystemColor.window);
@@ -125,7 +145,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 7
 
-		JButton button_7 = new JButton("7");
+		button_7 = new JButton("7");
 		button_7.setFont(font);
 		button_7.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_7.setBackground(SystemColor.window);
@@ -134,7 +154,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 8
 
-		JButton button_8 = new JButton("8");
+		button_8 = new JButton("8");
 		button_8.setFont(font);
 		button_8.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_8.setBackground(SystemColor.window);
@@ -143,7 +163,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button 9
 
-		JButton button_9 = new JButton("9");
+		button_9 = new JButton("9");
 		button_9.setFont(font);
 		button_9.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_9.setBackground(SystemColor.window);
@@ -153,7 +173,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Plus
 
-		JButton button_plus = new JButton("+");
+		button_plus = new JButton("+");
 		button_plus.setFont(font);
 		button_plus.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_plus.setBackground(SystemColor.window);
@@ -163,7 +183,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Minus
 
-		JButton button_minus = new JButton("-");
+		button_minus = new JButton("-");
 		button_minus.setFont(font);
 		button_minus.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_minus.setBackground(SystemColor.window);
@@ -172,7 +192,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 
 		// ------------------------------------------------------------------ Button Mal
 
-		JButton button_mal = new JButton("*");
+		button_mal = new JButton("*");
 		button_mal.setFont(font);
 		button_mal.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_mal.setBackground(SystemColor.window);
@@ -182,7 +202,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Durch
 
-		JButton button_durch = new JButton("/");
+		button_durch = new JButton("/");
 		button_durch.setFont(font);
 		button_durch.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_durch.setBackground(SystemColor.window);
@@ -192,7 +212,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Gleich
 
-		JButton button_gleich = new JButton("=");
+		button_gleich = new JButton("=");
 		button_gleich.setFont(font);
 		button_gleich.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_gleich.setBackground(SystemColor.window);
@@ -202,7 +222,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Clear
 
-		JButton button_clear = new JButton("Clear");
+		button_clear = new JButton("Clear");
 		button_clear.setFont(font);
 		button_clear.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_clear.setBackground(SystemColor.window);
@@ -212,7 +232,7 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Punkt
 
-		JButton button_dot = new JButton(".");
+		button_dot = new JButton(".");
 		button_dot.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_dot.setFont(font);
 		button_dot.setBackground(SystemColor.window);
@@ -222,13 +242,89 @@ public class CalculatorPanel extends JPanel implements ICalculatorPart {
 		// ------------------------------------------------------------------ Button
 		// Back
 
-		JButton button_back = new JButton("<-");
+		button_back = new JButton("<-");
 		button_back.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		button_back.setFont(font);
 		button_back.setBackground(SystemColor.window);
 		button_back.setBounds(81, 229, 75, 40);
 		this.add(button_back);
 
+	}
+	
+	public JTextField getCalculatorTextField() {
+		return calculatorTextField;
+	}
+
+	public JButton getButton_0() {
+		return button_0;
+	}
+
+	public JButton getButton_1() {
+		return button_1;
+	}
+
+	public JButton getButton_2() {
+		return button_2;
+	}
+
+	public JButton getButton_3() {
+		return button_3;
+	}
+
+	public JButton getButton_4() {
+		return button_4;
+	}
+
+	public JButton getButton_5() {
+		return button_5;
+	}
+
+	public JButton getButton_6() {
+		return button_6;
+	}
+
+	public JButton getButton_7() {
+		return button_7;
+	}
+
+	public JButton getButton_8() {
+		return button_8;
+	}
+
+	public JButton getButton_9() {
+		return button_9;
+	}
+
+	public JButton getButton_plus() {
+		return button_plus;
+	}
+
+	public JButton getButton_minus() {
+		return button_minus;
+	}
+
+	public JButton getButton_mal() {
+		return button_mal;
+	}
+
+	public JButton getButton_durch() {
+		return button_durch;
+	}
+
+	public JButton getButton_gleich() {
+		return button_gleich;
+	}
+
+	public JButton getButton_dot() {
+		return button_dot;
+	}
+
+	public JButton getButton_clear() {
+		return button_clear;
+	}
+
+	public JButton getButton_back() {
+		return button_back;
 	}
 
 	@Override

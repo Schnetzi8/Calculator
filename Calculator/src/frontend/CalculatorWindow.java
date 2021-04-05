@@ -78,4 +78,17 @@ public class CalculatorWindow {
 		labelCopyright.setBounds(175, 638, 310, 16);
 		contentPane.add(labelCopyright);
 	}
+
+	public CalculatorPanel getCalculatorPanel() {
+		return calculatorPanel;
+	}
+
+	public VolumePanel getVolumePanel() {
+		return volumePanel;
+	}
+
+	public LogPanel getLogPanel() {
+		return logPanel;
+	}
+	
 }
