@@ -484,7 +484,7 @@ public class GruppenArbeit {
 		//----------------------------------- Fusszeilen Label
 		
 		
-		JLabel labelCopyright = new JLabel("Copyright Â© 2021 Gruppe 3. All Rights Reserved\n");
+		JLabel labelCopyright = new JLabel("Copyright © 2021 Gruppe 3. All Rights Reserved\n");
 		labelCopyright.setBounds(175, 638, 310, 16);
 		gruppenarbeit.getContentPane().add(labelCopyright);
 		
