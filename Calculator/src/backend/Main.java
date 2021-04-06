@@ -10,6 +10,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//Test
 		CalculatorWindow window = new CalculatorWindow();
 		Log log = new Log(window.getLogPanel(), window.getAusgabeLeeren(), new OutputFile("output"));
 		Calculator calculator = new Calculator(window.getCalculatorPanel(),log);
