@@ -54,6 +54,7 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 		//-----------------------------------Slider Höhe
 		
 				hoehe = new JSlider();
+				hoehe.setBackground(Color.LIGHT_GRAY);
 				hoehe.setBounds(55, 20, 190, 50);
 				hoehe.setPaintLabels(true);
 				hoehe.setMinorTickSpacing(5);
@@ -82,6 +83,7 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 
 				
 				breite = new JSlider();
+				breite.setBackground(Color.LIGHT_GRAY);
 				breite.setBounds(55, 90, 190, 50);
 				breite.setMajorTickSpacing(10);
 				breite.setMinorTickSpacing(5);
@@ -110,6 +112,7 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 
 				
 				tiefe = new JSlider();
+				tiefe.setBackground(Color.LIGHT_GRAY);
 				tiefe.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 				tiefe.setBounds(55, 160, 190, 50);
 				tiefe.setValue(0);
