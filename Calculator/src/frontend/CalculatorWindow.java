@@ -76,7 +76,7 @@ public class CalculatorWindow {
 	}
 
 	private void setupCopyrightLabel() {
-		JLabel labelCopyright = new JLabel("Copyright "+copyrightL+" 2021 Gruppe 3. All Rights Reserved");
+		JLabel labelCopyright = new JLabel("Copyright © 2021 Gruppe 3. All Rights Reserved");
 		labelCopyright.setBounds(175, 638, 310, 16);
 		contentPane.add(labelCopyright);
 	}
