@@ -28,6 +28,7 @@ public class CalculatorWindow {
 	private CalculatorPanel calculatorPanel;
 	private VolumePanel volumePanel;
 	private LogPanel logPanel;
+	private JLabel copyrightL = new JLabel("<html><body>&copy;</body></html>");
 
 	/**
 	 * @author Kerim/Robin
@@ -75,7 +76,7 @@ public class CalculatorWindow {
 	}
 
 	private void setupCopyrightLabel() {
-		JLabel labelCopyright = new JLabel("Copyright © 2021 Gruppe 3. All Rights Reserved");
+		JLabel labelCopyright = new JLabel("Copyright "+copyrightL+" 2021 Gruppe 3. All Rights Reserved");
 		labelCopyright.setBounds(175, 638, 310, 16);
 		contentPane.add(labelCopyright);
 	}
@@ -95,5 +96,5 @@ public class CalculatorWindow {
 	public JMenuItem getAusgabeLeeren() {
 		return ausgabeLeeren;
 	}
-	
+
 }
