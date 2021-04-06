@@ -135,7 +135,7 @@ public class VolumePanel extends JPanel implements ICalculatorPart{
 
 	}
 
-	private void setupVolumeTextField() {
+	public void setupVolumeTextField() {
 		volumeTextField = new JTextField();
 		volumeTextField.setToolTipText("Ergebnis in Kubikcentimeter ");
 		volumeTextField.setEditable(false);
