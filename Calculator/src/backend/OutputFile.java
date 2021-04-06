@@ -29,15 +29,15 @@ public class OutputFile {
 	public OutputFile(String name) {
 		try {
 			path = fs.getPath(name + ".txt");
-			in = Files.newBufferedReader(path);
 			out = new PrintWriter(new BufferedWriter(new FileWriter(name + ".txt", true)));
+			in = Files.newBufferedReader(path);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	/**
 	 * @author Robin
-	 * @return Everythin in the file
+	 * @return Everything in the file
 	 */
 	public String getContent() {
 		if (!Files.exists(path)) {
