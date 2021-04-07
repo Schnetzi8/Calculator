@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
 import java.awt.Insets;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,6 +13,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.UIManager;
+
+
 
 /**
  * This class represents the Visual Window seen by the user.
@@ -76,7 +80,8 @@ public class CalculatorWindow {
 	}
 
 	private void setupCopyrightLabel() {
-		JLabel labelCopyright = new JLabel("Copyright © 2021 Gruppe 3. All Rights Reserved");
+		Charset charset = Charset.forName("UTF-8");
+		JLabel labelCopyright = new JLabel("Copyright " + "\u00a9" + " 2021 Gruppe 3. All Rights Reserved");
 		labelCopyright.setBounds(175, 638, 310, 16);
 		contentPane.add(labelCopyright);
 	}
